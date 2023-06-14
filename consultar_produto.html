@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Produto | Seja Elegante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="cabecalho__superior">
+            <h1 class="cabecalho__superior__logo">SejaElegante</h1>
+            <div class="cabecalho__superior__icones">
+                <img src="img/Vector-localizacao.svg" alt="icone de localizacao">
+                <p>Presente em <br> todo o Brasil</p>
+                <img src="img/Vector-coracao.svg" alt="icone de coracao">
+                <p>Realce sua beleza <br> com estilo e elegância</p>
+            </div>
+        </section>
+        <img class="linha__gradiente" src="img/Linnha Colorida.svg" alt="linha em gradiente dourada">
+        <nav class="cabecalho__inferior cabecalho__conteudo">
+            <a class="cabecalho__inferior__link" href="index.html">Fazer login</a>
+            <a class="cabecalho__inferior__link" href="cadastrar_categoria.html">Cadastrar Categoria</a>
+            <a class="cabecalho__inferior__link" href="consultar_categoria.html">Consultar Categorias</a>
+            <a class="cabecalho__inferior__link" href="cadastrar_produto.html">Cadastrar Produto</a>
+            <a class="cabecalho__inferior__link" href="consultar_produto.html">Consultar Produtos</a>
+            <a class="cabecalho__inferior__link" href="cadastrar_estoque.html">Cadastrar Estoque</a>
+            <a class="cabecalho__inferior__link" href="consultar_estoque.html">Consultar Estoque</a>
+            <a class="cabecalho__inferior__link" href="cadastrar_cliente.html">Cadastrar Cliente</a>
+            <a class="cabecalho__inferior__link" href="consultar_cliente.html">Consultar Cliente</a>
+        </nav>
+
+        <div class="cabecalho__toggle" onclick="toggleMenu()">
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+        </div>
+    </header>      
+    
+
+    <div class="label">
+        <h2 class="label__titulo">CONSULTAR PRODUTOS</h2>
+        <label>Nome</label>
+        <input type="text" id="descricao" name="nome produto" placeholder="Nome do produto já cadastrado">
+        <label>Código</label>
+        <input type="text" id="codigo" name="codigo produto" placeholder="Código já cadastrado">
+        <label>Valor</label>
+        <input type="number" id="valor" name="valor produto" placeholder="Valor já cadastrado">
+        <label>Categoria</label>
+        <input type="text" id="categoria" name="categoria produto" placeholder="Categoria já cadastrada">
+        
+        <div class="cadastro__botoes">
+            <button class="fade" type="submit" onclick="getProdutos()">Editar</button>
+            <button class="cadastro__botoes__excluir" type="submit">Excluir</button>
+        </div>
+        
+        <section id="produtos">
+        
+        </section>
+    </div>
+
+    <script>
+        function toggleMenu() {
+        var cabecalhoConteudo = document.querySelector('.cabecalho__conteudo');
+        cabecalhoConteudo.classList.toggle('show');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./scripts/client.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+    
+</html>
