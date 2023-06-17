@@ -25,16 +25,26 @@ async function getClientes(){
         tabelaClientes.innerHTML = '';
         clientes.map((cliente) => {
             tabelaClientes.innerHTML += `
-            <table>
-                <tr>
-                    <td>${cliente.id}</td>
-                    <td>${cliente.nome}</td>
-                    <td>${cliente.cpf}</td>
-                    <td>${cliente.estado}</td>
-                    <td>${cliente.email}</td>
-                    <td>${cliente.telefone}</td>
-                </tr>
-            </table>`;
+            <div class="container-table">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Estado</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                    </tr>
+                    <tr>
+                        <td class="id">${cliente.id}</td>
+                        <td>${cliente.nome}</td>
+                        <td>${cliente.cpf}</td>
+                        <td>${cliente.estado}</td>
+                        <td>${cliente.email}</td>
+                        <td>${cliente.telefone}</td>
+                    </tr>
+                </table>
+            </div>`;
         })
     }
 }
@@ -96,14 +106,22 @@ async function getProdutos(){
         tabelaProdutos.innerHTML = '';
         produtos.map((produto) => {
             tabelaProdutos.innerHTML += `
-            <table>
-                <tr>
-                    <td>${produto.id}</td>
-                    <td>${produto.descricao}</td>
-                    <td>${produto.valor}</td>
-                    <td>${produto.categoria}</td>
-                </tr>
-            </table>`;
+            <div class="container-table">
+                <table class="table">
+                    <tr>
+                        <th>ID</th> 
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Categoria</th>
+                    </tr>
+                    <tr>
+                        <td class="id">${produto.id}</td>
+                        <td>${produto.descricao}</td>
+                        <td>R$ ${produto.valor}</td>
+                        <td>${produto.categoria}</td>
+                    </tr>
+                </table>
+            </div>`;
         })
     }
 }
@@ -160,12 +178,18 @@ async function getCategorias(){
         tabelaCategorias.innerHTML = '';
         categorias.map((categoria) => {
             tabelaCategorias.innerHTML += `
-            <table>
-                <tr>
-                    <td>${categoria.id}</td>
-                    <td>${categoria.descricao}</td>
-                </tr>
-            </table>`;
+            <div class="container-table">
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Categoria</th>
+                    </tr>
+                    <tr>
+                        <td class="id">${categoria.id}</td>
+                        <td>${categoria.descricao}</td>
+                    </tr>
+                </table>
+            </div>`;
         })
     }
 }
@@ -219,14 +243,31 @@ async function getEstoques(){
         tabelaEstoques.innerHTML = '';
         estoques.map((estoque) => {
             tabelaEstoques.innerHTML += `
-            <table>
-                <tr>
-                    <td>${estoque.codigo}</td>
-                    <td>${estoque.descricao}</td>
-                    <td>${estoque.saldo}</td>
-                    <td>${estoque.categoria}</td>
-                </tr>
-            </table>`;
+            <div class="container-table">
+                <style>
+                    .hidden-header {
+                    display: none;
+                    }
+                </style>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Quantidade disponível</th>
+                            <th>Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                <td class="id">${estoque.codigo}</td>
+                                <td>${estoque.descricao}</td>
+                                <td>${estoque.saldo}</td>
+                                <td>${estoque.categoria}</td>
+                        </tr>
+                    </tbody>
+            </table>
+            </div>`;
         })
     }
 }

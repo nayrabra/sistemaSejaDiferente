@@ -233,6 +233,7 @@ input[type="password"] {
 
 .cadastro__botoes {
     margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -254,6 +255,30 @@ input[type="password"] {
     opacity: 0.8;
     transform: scale(1.05);
 }
+
+/*TABELAS DE CONSULTAS*/
+
+.container-table {
+    display: flex;
+    justify-content: center;
+}
+
+table.table {
+    border-collapse: collapse;
+}
+  
+table.table td {
+    border: 1px solid black;
+    padding: 8px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.id {
+    background-color: #d3d3d3;
+}
+
 
 @media (max-width: 768px) {
 
@@ -292,5 +317,15 @@ input[type="password"] {
     input[type="password"] {
     max-width: 100%;
     width: 100%;
+    }
+
+    .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table th {
+        display: none;
+      
     }
 }
