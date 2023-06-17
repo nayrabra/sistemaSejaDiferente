@@ -1,11 +1,9 @@
-# Sistema para empresa "Seja Elegante"
-Sistema de uso interno de uma empresa fictícia.
-<br>
-<br>
-<img width="1421" alt="Captura de Tela 2023-06-09 às 23 05 20" src="https://github.com/nayrabra/sistemaSejaDiferente/assets/102299426/7ae9c836-1968-4447-9f0f-2c7ca4cc5938">
-<br>
-<br>
-<img width="396" alt="Captura de Tela 2023-06-09 às 23 06 28" src="https://github.com/nayrabra/sistemaSejaDiferente/assets/102299426/0b49a6ec-79aa-476d-89aa-6c0bf339ad5a">
+# Sistema "Seja Elegante"
+Sistema de uso interno que foi criado na Universidade durante a disciplina de Ambiente e Desenvolvimento de Software.
+<br><br>
+<img width="1426" alt="Captura de Tela 2023-06-14 às 23 18 05" src="https://github.com/nayrabra/sistemaSejaElegante/assets/102299426/4da3b841-674e-48bd-98d9-de43ba096e62">
+<br><br>
+<img width="417" alt="Responsivo" src="https://github.com/nayrabra/sistemaSejaElegante/assets/102299426/8cf61cf7-6b42-4f82-a4cb-d42102317eb7">
 
 ## Ferramentas utilizadas:
 
@@ -17,10 +15,5 @@ Sistema de uso interno de uma empresa fictícia.
 
 * Flex-box
 
+* Supabase
 
-
-## Feito por:
-
-### Nayra Braga Barbosa
-
-### Linkedin: https://www.linkedin.com/in/nayra-barbosa/
